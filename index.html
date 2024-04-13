@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <title>Music Player</title>
+</head>
+<body>
+
+  <div class="container">
+  <h1>Music Player <h3>by JAVASCRIPT</h3></h1>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search songs..." />
+      <!-- <button class="fas fa-search search-icon" id="seach-btn"></button> -->
+    </div>
+    <div class="box">
+      <i class="fa-solid fa-backward-step fa-3x control-btn" id="prev"></i>
+      <i class="fa-solid fa-pause fa-3x control-btn" id="pause" style="display: none;"></i>
+      <i class="fa-solid fa-play fa-3x control-btn" id="play"></i>
+      <i class="fa-solid fa-forward-step fa-3x control-btn" id="next"></i>
+    </div>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div class="song-info">
+      <h2 id="song-title" style="display: none;">Song Title</h2>
+      <p id="song-artist" style="display: none;">Artist Name</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
