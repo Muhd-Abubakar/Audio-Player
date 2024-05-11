@@ -36,7 +36,7 @@ async function playSongs() {
 function playPauseSong(index) {
   if (currentSong && !currentSong.paused) {
     // Pause the current song
-    currentSong.pause();
+       currentSong.pause();
     updatePlayPauseButton(false);
     return;
   }
@@ -119,6 +119,10 @@ function updateSong(action) {
   }
 
   console.log('Current song index:', currentSongIndex);
+  if (currentSong && !currentSong.paused) {
+    // If the current song is playing, pause it before playing the next song
+    currentSong.pause();
+  }
   playPauseSong(currentSongIndex);
 }
 
