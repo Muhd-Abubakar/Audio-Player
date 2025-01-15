@@ -1,3 +1,4 @@
+/* General Reset and Body Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,14 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, #ff6b6b, #ffa500);
+  background-image: linear-gradient(to right, #ff0303, #ffa500);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Container Style */
 .container {
   width: 450px;
   background-color: #fff;
@@ -22,6 +24,7 @@ body {
   text-align: center;
 }
 
+/* Search Container Style */
 .search-container {
   display: flex;
   justify-content: center;
@@ -29,6 +32,7 @@ body {
   margin-bottom: 40px;
 }
 
+/* Search Input Style */
 #search-input {
   width: 80%;
   padding: 10px 20px;
@@ -44,8 +48,8 @@ body {
   background-color: #e6e6e6;
 }
 
-.search-icon {
-  
+/* Microphone Icon (Speech Button) Style */
+#speech-button {
   color: #ff6b6b;
   font-size: 24px;
   margin-left: 10px;
@@ -55,28 +59,26 @@ body {
   background: none;
 }
 
-
-
-.search-icon:hover {
-
+#speech-button:hover {
   transform: scale(1.2);
   color: #ffa500;
 }
 
+/* Heading Styles */
 h1 {
   color: #333;
   font-size: 36px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-H3{
-  
-    color: #333;
-    /* font-size: px; */
-    margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
 
+h3 {
+  color: #333;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Control Button Styles */
 .box {
   display: flex;
   justify-content: center;
@@ -95,6 +97,8 @@ H3{
   transform: scale(1.1);
   color: #ffa500;
 }
+
+/* Progress Bar Styles */
 .progress-container {
   width: 100%;
   height: 20px;
@@ -110,6 +114,8 @@ H3{
   width: 0%;
   transition: width 0.1s linear;
 }
+
+/* Song Info Styles */
 .song-info h2 {
   color: #333;
   font-size: 28px;
