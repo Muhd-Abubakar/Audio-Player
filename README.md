@@ -20,3 +20,4 @@ You can view a live demo of the project here: [Audio Player Demo](https://muhd-a
 
    ```bash
    git clone https://github.com/Muhd-Abubakar/Audio-Player.git
+   ```
